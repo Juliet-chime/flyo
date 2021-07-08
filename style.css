@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    background: rgb(30, 30, 36);
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 10px;
+    font-size: large;
+}
+
+.banner{
+    margin: 50px 0px ;
+}
+
+.banner-img{
+    margin: auto;
+    width: 800px;
+    text-align: center;
+}
+
+.banner-img h2{
+padding: 20px 5px;
+width: 600px;
+margin: auto;
+font-size: 40px;
+line-height: 1.5;
+}
+
+.banner-img p{
+    padding: 20px 5px;
+    width: 600px;
+    margin: auto;
+    font-size: 23px;
+    line-height: 1.3;
+    }
+
+    .banner-img button{
+         background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+         background-size: 200% auto;
+         margin: 10px;
+         padding: 15px 45px;
+         border: none;
+         padding: 18px 100px;
+         border-radius: 30px;
+         font-size: 18px;
+         color: white;
+         transition: 0.5s;
+        }
+
+         .banner-img button:hover {
+           background-position: right center; /* change the direction of the change here */
+           color: #fff;
+           text-decoration: none;
+         } 
+
+         .sec1{
+             display: flex;
+             justify-content:space-evenly;
+             flex-wrap: wrap;   
+         }
+        
+         .sec1-1{
+            flex-basis: 400px;
+            text-align: center;
+            padding: 50px 0px;
+         }
+
+         .sec1-1 h2{
+            padding: 0px 0px 10px 0px;
+        }
+
+        .sec1-1 p{
+            font-size: 17px;
+        }
+
+        .banner2{
+            display: flex;
+            justify-content:center;
+        }
+
+        .banner2-img{
+            width: 450px;
+        }
+
+        .banner2-img img{
+            width: 100%;
+        }
+
+        .banner2-text{
+            width: 400px;
+            padding: 30px 10px;
+            align-self: center;
+            margin: 0px 30px;
+        }
+
+        .banner2-text h2{
+            width: 200px;
+        }
+
+        .banner2-text a{
+            color: black;
+            font-size: 18px;
+        }
+
+         .testimonial{
+             display: flex;
+             justify-content: space-evenly;
+             padding: 20px 0px 150px 0px;
+             position: relative;
+             margin: 80px 0px 0px 0px;
+         }
+
+         .testimonial-text{
+            background: rgb(25, 26, 34);
+             flex-basis: 400px;
+             padding: 20px;
+         }
+
+         .testimonial-text img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .testimonial-text p{
+          line-height: 1.5;
+        }
+
+
+        .footer-holder{
+            position: relative;
+            padding: 20px 0px;
+            margin-top: 100px;
+        }
+
+        .snippet-text{
+            background: rgb(25, 26, 34);
+            width: 700px;
+            text-align: center;
+            padding: 30px;
+            position: absolute;
+            top: -120px;
+            left: 330px;
+        }
+
+        .snippet-text input{
+            width: 50%;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: solid 1px rgb(230, 227, 227);
+        }
+
+        .snippet-text button{
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: solid 1px rgb(230, 227, 227);
+             background: rgb(13, 166, 226);
+        }
+
+        .footer{
+            background: rgb(24, 22, 22);
+            display: flex;
+            justify-content: space-around;
+            padding: 70px 0px;
+        }
+
+        .footer-text{
+            flex-basis: 260px;
+            padding: 20px;
+        }
+
+        .footer-text li{
+            text-align: center;
+            padding: 3px;
+            list-style: none;
+           }
+
+           .footer-text a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+           }
+
+           @media only screen and (max-width: 1024px) {
+            .header{
+                display: inline-block;
+                justify-content:none;
+                align-items:none;
+            }
+
+            .banner2{
+                display: block;
+            }
+
+            .testimonial{
+                display: block;
+            }
+
+            .snippet-text{
+                left: 10px;
+            }
+
+            .footer{
+                 display: block;
+            }
+
+            .footer-text li{
+                padding: 3px;
+               }
+          }
